@@ -4,8 +4,8 @@
   padding: 0;
   font-family: "Poppins", sans-serif;
 }
-img{
-    max-width: 100%;
+img {
+  max-width: 100%;
 }
 .container {
   max-width: 1280px;
@@ -24,8 +24,8 @@ img{
   padding-left: 45px;
   flex: 1;
 }
-.banner-right{
-    flex: 1;
+.banner-right {
+  flex: 1;
 }
 .banner h2 {
   font-size: 70px;
@@ -107,6 +107,10 @@ img{
 }
 /* laptop/tab */
 @media (max-width: 992px) {
+    /* container */
+    .container{
+        max-width: 0 20px;
+    }
   /* banner h2 */
   .banner h2 {
     font-size: 50px;
@@ -131,19 +135,25 @@ img{
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 768px){
-    .banner{
-        flex-direction: column;
-        text-align: center;
+@media (max-width: 768px) {
+    /* container */
+    .container{
+        max-width: 0 10px;
     }
-    .banner .banner-left{
-        margin-bottom: 40px;
-        padding-left: 0;
-        padding-top: 40px;
-    }
-    .banner .banner-left p{
-        max-width: 100%;
-        /* margin: 15px auto; */
-    }
+  .banner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .banner .banner-left {
+    margin-bottom: 40px;
+    padding-left: 0;
+    padding-top: 40px;
+  }
+  .banner .banner-left p {
+    max-width: 100%;
+    /* margin: 15px auto; */
+  }
+  .upcoming-matches-right{
+    grid-template-columns: repeat(1,1fr);
+  }
 }
-
